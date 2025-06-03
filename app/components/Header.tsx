@@ -14,7 +14,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="text-black px-4 py-1 md:py-8">
+    <header className="px-4 max-w-7xl mx-auto py-1 md:py-8">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Left: Logo */}
         <div className="flex items-center space-x-2">
