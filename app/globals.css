@@ -124,7 +124,14 @@ body {
   inset: 0;
   z-index: -10;
   background-image: url('/images/noise.png');
-  background-size: cover;
-  background-position: center;
+  
   opacity: 0.06;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Ховаємо скролбар у Chrome, Safari */
+}
+
+.no-scrollbar {
+  scrollbar-width: none; /* Ховаємо скролбар у Firefox */
 }

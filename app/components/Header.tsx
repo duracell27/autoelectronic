@@ -63,31 +63,39 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger>
-              <Menu className="w-6 h-6"  />
+              <Menu className="w-6 h-6" />
             </SheetTrigger>
-            
-            <SheetContent side="right" className="[&>button:not(.p-2)]:hidden bg-foreground text-background">
-                <SheetTitle className="flex items-center justify-end gap-2 p-2">
-                <SheetClose className="text-foreground bg-background rounded-full outline-none">
-                    <X className="h-8 w-8" /> {/* Хрестик */}
-                </SheetClose>
-            </SheetTitle>
-              <nav className="flex flex-col gap-6  px-4">
 
+            <SheetContent side="right" className="[&>button:not(.p-2)]:hidden bg-foreground text-background">
+              <SheetTitle className="flex items-center justify-end gap-2 p-2">
+                <SheetClose className="text-foreground bg-background rounded-full outline-none">
+                  <X className="h-8 w-8" /> {/* Хрестик */}
+                </SheetClose>
+              </SheetTitle>
+              <nav className="flex flex-col gap-6  px-4">
                 <Accordion className="border-b border-gray-700" type="single" collapsible>
-                  <AccordionItem value="item-1">
-                    <AccordionTrigger className="text-left p-0 outline-none flex items-center gap-2 [&[data-state=open]>[data-chevron]]:rotate-180 [&&>svg:not([data-chevron])]:hidden">
+                  <AccordionItem value="item-1" className="border-none">
+                    <AccordionTrigger className="text-left p-0 outline-none flex items-center gap-2 [&[data-state=open]>[data-chevron]]:text-background [&&>svg:not([data-chevron])]:hidden">
                       Послуги
-                      <ChevronDown data-chevron className="transition-transform duration-200" />
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col p-0 bg-foreground text-background">
-                      <Link className="my-3" href="/services/language">Мовна адаптація</Link>
-                      <Link className="mt-3" href="/services/carplay">Активація CarPlay</Link>
+                      <div className="mt-2">
+                        <Link className="my-3 inline-flex" href="/services/language">
+                          Мовна адаптація
+                        </Link>
+                        <Link className="mt-3 inline-flex" href="/services/carplay">
+                          Активація CarPlay
+                        </Link>
+                      </div>
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
-                <Link className="border-b border-gray-700" href="/portfolio">Портфоліо</Link>
-                <Link className="border-b border-gray-700" href="/partners">Партнерам</Link>
+                <Link className="border-b border-gray-700" href="/portfolio">
+                  Портфоліо
+                </Link>
+                <Link className="border-b border-gray-700" href="/partners">
+                  Партнерам
+                </Link>
                 <div className="flex items-center space-x-1 pb-1 gap-2 border-b border-gray-700">
                   <Image src={"/images/phone.svg"} alt="Phone" width={20} height={20} />
                   <a

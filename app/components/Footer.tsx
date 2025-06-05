@@ -8,7 +8,7 @@ export const Footer = (props: Props) => {
   return (
     <div className="px-4 mt-10 pb-15 max-w-7xl mx-auto">
       <div className="flex items-center justify-between w-full">
-        <div className="grid grid-cols-2 gap-5 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
           <div className="">
             {/* Left: Logo */}
             <div className="flex mb-7 items-center space-x-2">
@@ -62,7 +62,7 @@ export const Footer = (props: Props) => {
               </li>
             </ul>
           </div>
-          <div className="flex gap-29 justify-end">
+          <div className="flex mt-5 md:mt-0 md:gap-29 gap-5 md:justify-end justify-between">
             <div className="">
               <h2 className="text-lg font-semibold mb-10">Навігація</h2>
               <ul className="text-secondary-gray space-y-8">

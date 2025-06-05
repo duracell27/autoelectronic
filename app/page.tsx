@@ -9,7 +9,7 @@ import { Service } from "./components/services/Service";
 
 export default function Home() {
   return (
-    <div className="home-container mx-2">
+    <div className="home-container px-2">
       <div className="home-background"></div>
       <Header />
       <Banner />

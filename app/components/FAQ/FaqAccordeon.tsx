@@ -5,7 +5,7 @@ type Props = {};
 
 export const FaqAccordeon = (props: Props) => {
   return (
-    <Accordion className="mt-12" type="single" collapsible>
+    <Accordion className="mt-12 px-2 md:px-0" type="single" collapsible>
       <AccordionItem value="item-1" className="">
         <AccordionTrigger className="text-2xl leading-9 text-left">Чи злітає прошивка після зняття клеми акумулятора?</AccordionTrigger>
         <AccordionContent className="text-base font-avenir text-secondary-gray">Ні, всі налаштування зберігаються після зняття акумулятора.</AccordionContent>

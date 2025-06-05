@@ -7,7 +7,7 @@ type Props = {};
 
 export const FaqHeading = (props: Props) => {
   return (
-    <div className="w-full max-w-7xl">
+    <div className="w-full max-w-7xl px-2 md:px-0">
       <h1 className="mt-15 mb-8 text-foreground text-[40px] font-light text-left uppercase tracking-tight">
         <strong className="font-semibold">
           Поширені

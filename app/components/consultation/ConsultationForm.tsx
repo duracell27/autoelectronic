@@ -25,10 +25,10 @@ export const ConsultationForm = (props: Props) => {
     console.log(data);
   };
   return (
-    <div className="w-full px-4 max-w-7xl mb-27">
+    <div className="w-full px-4 max-w-7xl mb-10 md:mb-27">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="">
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div className="space-y-4">
               <FormField
                 control={form.control}
@@ -69,9 +69,7 @@ export const ConsultationForm = (props: Props) => {
                 )}
               />
 
-              <Button type="submit" variant={"defaultBlack"}>
-                Записатись
-              </Button>
+              
             </div>
             <div className="">
               <FormField
@@ -87,6 +85,10 @@ export const ConsultationForm = (props: Props) => {
                 )}
               />
             </div>
+
+            <Button className="w-[180px] my-2" type="submit" variant={"defaultBlack"}>
+                Записатись
+              </Button>
           </div>
         </form>
       </Form>
