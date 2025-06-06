@@ -17,6 +17,7 @@ export const Service = (props: Props) => {
           title={"CarPlay"}
           time={"10 хвилин"}
           description={"Що таке Apple CarPlay? Apple CarPlay — це зручна технологія, яка дозволяє вам..."}
+          link="/services/carplay"
         />
         <ServiceCard
           accentColor={"#EA5F38"}
@@ -24,6 +25,7 @@ export const Service = (props: Props) => {
           title={"авто із США"}
           time={"10 хвилин"}
           description={"Мовна адаптація авто із США — це процес налаштування інформаційних та мульти..."}
+          link="/services/language"
         />
         <ServiceCard
           accentColor={"#6A26F1"}
@@ -31,6 +33,7 @@ export const Service = (props: Props) => {
           title={"SRS після ДТП"}
           time={"10 хвилин"}
           description={"Після аварії система безпеки автомобіля (SRS — Supplemental Restraint System, або система..."}
+          link="/services/srs"
         />
       </div>
     </div>

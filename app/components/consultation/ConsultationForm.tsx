@@ -8,7 +8,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
-type Props = {};
+type Props = {
+  from: string;
+};
 
 export const ConsultationForm = (props: Props) => {
   const form = useForm<TypeConsultationSchema>({
@@ -17,12 +19,29 @@ export const ConsultationForm = (props: Props) => {
       name: "",
       lastName: "",
       phone: "+38",
+      from: props.from || "",
       description: "",
     },
   });
 
-  const onSubmit = (data: TypeConsultationSchema) => {
-    console.log(data);
+  const onSubmit = async (data: TypeConsultationSchema) => {
+    try {
+    const res = await fetch("/api/telegram", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    if (!res.ok) {
+      throw new Error("Помилка при відправці");
+    }
+
+    alert("Заявку надіслано!");
+    form.reset();
+  } catch (error) {
+    alert("Не вдалося надіслати заявку");
+    console.error(error);
+  }
   };
   return (
     <div className="w-full px-4 max-w-7xl mb-10 md:mb-27">
@@ -35,6 +54,19 @@ export const ConsultationForm = (props: Props) => {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
+                    <FormControl>
+                      <Input placeholder="І`мя" type="text" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="from"
+                render={({ field }) => (
+                  <FormItem className="hidden">
                     <FormControl>
                       <Input placeholder="І`мя" type="text" {...field} />
                     </FormControl>
@@ -74,7 +106,7 @@ export const ConsultationForm = (props: Props) => {
             <div className="">
               <FormField
                 control={form.control}
-                name="lastName"
+                name='description'
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>

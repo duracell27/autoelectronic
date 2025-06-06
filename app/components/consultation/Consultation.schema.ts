@@ -16,6 +16,7 @@ export const ConsultationSchema = z.object({
       message:
         'Номер повинен відповідати формату +380508888182',
     }),
+    from: z.string().optional(),
     description: z.string().min(1, {
 		message: 'Опис повинен містити як мінімум 1 символ'
 	}),

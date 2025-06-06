@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 type Props = {
@@ -8,6 +9,7 @@ type Props = {
   title: string;
   time: string;
   description: string;
+  link: string;
 };
 
 export const ServiceCard = (props: Props) => {
@@ -23,14 +25,17 @@ export const ServiceCard = (props: Props) => {
       </div>
       <div className="flex justify-between gap-2 items-center">
         <p className="max-w-[220px] font-avenir text-sm text-secondary-gray">{props.description}</p>
-        <Button
-          className="text-base hover:text-background hover:bg-foreground md:text-2xl px-3 py-3 md:px-8 md:py-7 rounded-full"
-          variant={"outlineBlack"}
-        >
-          <div className="">
-            <ArrowRight style={{ width: "24px", height: "24px" }} />
-          </div>
-        </Button>
+        <Link href={props.link}>
+          <Button
+            
+            className="text-base cursor-pointer hover:text-background hover:bg-foreground md:text-2xl px-3 py-3 md:px-8 md:py-7 rounded-full"
+            variant={"outlineBlack"}
+          >
+            <div className="">
+              <ArrowRight style={{ width: "24px", height: "24px" }} />
+            </div>
+          </Button>
+        </Link>
       </div>
     </div>
   );

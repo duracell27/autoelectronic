@@ -15,7 +15,7 @@ export default function Home() {
       <Banner />
       <Service />
       <Cases />
-      <Consultation />
+      <Consultation from="Головна"/>
       <Faq/>
       <Cooperation />
       <Footer />
