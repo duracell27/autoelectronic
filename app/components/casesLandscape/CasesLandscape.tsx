@@ -1,9 +1,11 @@
 import React from "react";
 import { CasesHeadingLandscape } from "./CasesHeadingLandscape";
 import { CasesCarouselLandscape } from "./CasesCarouselLandscape";
+import { innerObj } from "@/lib/db";
 
 type Props = {
   title: string;
+  serviceList: innerObj[];
 };
 
 export const CasesLandscape = (props: Props) => {
@@ -12,7 +14,7 @@ export const CasesLandscape = (props: Props) => {
       <div className="flex flex-col items-center justify-between w-full">
         <CasesHeadingLandscape title={props.title} />
 
-        <CasesCarouselLandscape />
+        <CasesCarouselLandscape serviceList={props.serviceList} />
       </div>
     </div>
   );

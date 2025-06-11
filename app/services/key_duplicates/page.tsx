@@ -2,7 +2,8 @@
 import { BannerService } from "@/app/components/banner/BannerService";
 import { CasesLandscape } from "@/app/components/casesLandscape/CasesLandscape";
 import { Consultation } from "@/app/components/consultation/Consultation";
-import { DescriptionCarplay } from "@/app/components/description/DescriptionCarplay";
+import { DescriptionKeyDuplicates } from "@/app/components/description/DescriptionKeyDuplicates";
+
 import { Footer } from "@/app/components/Footer";
 import HeaderTransparent from "@/app/components/HeaderTransparent";
 import { db } from "@/lib/db";
@@ -11,7 +12,7 @@ import React, { useRef } from "react";
 
 type Props = {};
 
-const CarplayServicePage = (props: Props) => {
+const LanguageAdaptationServicePage = (props: Props) => {
   const consultationRef = useRef<HTMLDivElement>(null);
 
   const scrollToConsultation = () => {
@@ -29,18 +30,19 @@ const CarplayServicePage = (props: Props) => {
       <div className="-mx-2">
         <BannerService
           scrollToConsultation={scrollToConsultation}
-          title={"активація carplay"}
-          bgName={"carplayBg"}
+          title={"Дублікат ключів"}
+          bgName={"keyDuplicates"}
         />
       </div>
-      <DescriptionCarplay />
-      <CasesLandscape title="Активація CarPlay" serviceList={db.carplay} />
+      <DescriptionKeyDuplicates />
+      <CasesLandscape title="Дублікат ключів" serviceList={db.key} />
       <div ref={consultationRef}>
-        <Consultation from="Активація CarPlay" />
+        <Consultation from="Дублікат ключів" />
       </div>
+
       <Footer />
     </div>
   );
 };
 
-export default CarplayServicePage;
+export default LanguageAdaptationServicePage;

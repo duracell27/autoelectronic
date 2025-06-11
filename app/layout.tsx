@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
-      <body className={clsx(unbounded.variable, "font-unbounded")}>
+      <body className={clsx(unbounded.variable, "font-unbounded scroll-smooth")}>
         {children}
       </body>
     </html>

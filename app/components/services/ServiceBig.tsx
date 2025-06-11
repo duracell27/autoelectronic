@@ -4,13 +4,10 @@ import { ServiceCard } from "./ServiceCard";
 
 type Props = {};
 
-export const Service = (props: Props) => {
+export const ServiceBig = (props: Props) => {
   return (
     <div className="px-4 max-w-7xl mx-auto">
-      <div className="flex items-center justify-between w-full">
-        <ServiceTitle />
-      </div>
-      <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ServiceCard
           accentColor={"#45A7DE"}
           titleBold={"Активація"}
@@ -34,6 +31,24 @@ export const Service = (props: Props) => {
           time={"10 хвилин"}
           description={"Після аварії система безпеки автомобіля (SRS — Supplemental Restraint System, або система..."}
           link="/services/srs"
+        />
+      </div>
+      <div className="grid mb-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <ServiceCard
+          accentColor={"#33cc33"}
+          titleBold={"Виготовлення дублікатів "}
+          title={"автомобільних ключів"}
+          time={"10 хвилин"}
+          description={"Втратили ключ або просто хочете мати запасний? Ми швидко та професійно виготовимо дублікат..."}
+          link="/services/key_duplicates"
+        />
+        <ServiceCard
+          accentColor={"#cc0099"}
+          titleBold={"Активація "}
+          title={"Android Auto"}
+          time={"10 хвилин"}
+          description={"Android Auto — це зручна платформа від Google, яка дозволяє вам використовувати функції вашо..."}
+          link="/services/android_auto"
         />
       </div>
     </div>

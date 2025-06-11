@@ -28,15 +28,24 @@ export default function HeaderTransparent() {
         {/* Center: Menu */}
         <div className="hidden md:flex space-x-8 text-background ml-18 flex-1">
           <DropdownMenu>
-            <DropdownMenuTrigger className=" hover:underline flex items-center-safe gap-2 ">
+            <DropdownMenuTrigger className=" hover:underline cursor-pointer flex items-center-safe gap-2 ">
               Послуги <ChevronDown />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem>
-                <Link href="/services/language">Мовна адаптація</Link>
+                <Link href="/services/carplay" className="py-2 cursor-pointer">Активація CarPlay</Link>
+              </DropdownMenuItem>
+               <DropdownMenuItem>
+                <Link href="/services/language_adaptation" className="py-2 cursor-pointer">Мовна адаптація</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/services/carplay">Активація CarPlay</Link>
+                <Link href="/services/srs" className="py-2 cursor-pointer">Обнулення блоку SRS</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/services/key_duplicates" className="py-2 cursor-pointer">Виготовлення дублікатів</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/services/android_auto" className="py-2 cursor-pointer">Активація Android Auto</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -75,16 +84,26 @@ export default function HeaderTransparent() {
               <nav className="flex flex-col gap-6  px-4">
                 <Accordion className="border-b border-gray-700" type="single" collapsible>
                   <AccordionItem value="item-1" className="border-none">
-                    <AccordionTrigger className="text-left p-0 outline-none flex items-center gap-2 [&[data-state=open]>[data-chevron]]:text-background [&&>svg:not([data-chevron])]:hidden">
+                    <AccordionTrigger className="text-left p-0 outline-none cursor-pointer flex items-center gap-2 [&[data-state=open]>[data-chevron]]:text-background [&&>svg:not([data-chevron])]:hidden">
                       Послуги
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col p-0 bg-foreground text-background">
                       <div className="mt-2">
-                        <Link className="my-3 inline-flex" href="/services/language">
+                        
+                        <Link className="my-3 inline-flex" href="/services/carplay">
+                          Активація CarPlay
+                        </Link>
+                        <Link className="my-3 inline-flex" href="/services/language_adaptation">
                           Мовна адаптація
                         </Link>
-                        <Link className="mt-3 inline-flex" href="/services/carplay">
-                          Активація CarPlay
+                        <Link className="my-3 inline-flex" href="/services/srs">
+                          Обнулення блоку SRS
+                        </Link>
+                        <Link className="my-3 inline-flex" href="/services/key_duplicates">
+                          Виготовлення дублікатів
+                        </Link>
+                        <Link className="my-3 inline-flex" href="/services/android_auto">
+                          Активація Android Auto  
                         </Link>
                       </div>
                     </AccordionContent>

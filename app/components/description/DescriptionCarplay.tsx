@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-export const Description = (props: Props) => {
+export const DescriptionCarplay = (props: Props) => {
   return (
     <div className="md:my-8 my-2 pb-16 rounded-2xl max-w-[1400px] mx-auto bg-background">
       <div className="flex flex-col items-start justify-between w-full">

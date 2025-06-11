@@ -17,13 +17,13 @@ export default function Header() {
     <header className="px-4 max-w-7xl mx-auto py-1 md:py-8">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Left: Logo */}
-        <div className="flex items-center space-x-2">
+        <Link href={'/'} className="flex items-center space-x-2">
           <Image src="/images/logo.svg" alt="Logo" width={75} height={75} />
           <div className="">
             <p className="text-xs uppercase leading-none font-medium">Auto</p>
             <p className="text-base leading-none uppercase font-bold">Electronic</p>
           </div>
-        </div>
+        </Link>
 
         {/* Center: Menu */}
         <div className="hidden md:flex space-x-8 text-foreground ml-18 flex-1">
@@ -32,11 +32,21 @@ export default function Header() {
               Послуги <ChevronDown />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
+             
               <DropdownMenuItem>
-                <Link href="/services/language">Мовна адаптація</Link>
+                <Link href="/services/carplay" className="py-2 cursor-pointer">Активація CarPlay</Link>
+              </DropdownMenuItem>
+               <DropdownMenuItem>
+                <Link href="/services/language_adaptation" className="py-2 cursor-pointer">Мовна адаптація</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/services/carplay">Активація CarPlay</Link>
+                <Link href="/services/srs" className="py-2 cursor-pointer">Обнулення блоку SRS</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/services/key_duplicates" className="py-2 cursor-pointer">Виготовлення дублікатів</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/services/android_auto" className="py-2 cursor-pointer">Активація Android Auto</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -80,11 +90,21 @@ export default function Header() {
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col p-0 bg-foreground text-background">
                       <div className="mt-2">
-                        <Link className="my-3 inline-flex" href="/services/language">
+                        
+                        <Link className="my-3 inline-flex" href="/services/carplay">
+                          Активація CarPlay
+                        </Link>
+                        <Link className="my-3 inline-flex" href="/services/language_adaptation">
                           Мовна адаптація
                         </Link>
-                        <Link className="mt-3 inline-flex" href="/services/carplay">
-                          Активація CarPlay
+                        <Link className="my-3 inline-flex" href="/services/srs">
+                          Обнулення блоку SRS
+                        </Link>
+                        <Link className="my-3 inline-flex" href="/services/key_duplicates">
+                          Виготовлення дублікатів
+                        </Link>
+                        <Link className="my-3 inline-flex" href="/services/android_auto">
+                          Активація Android Auto  
                         </Link>
                       </div>
                     </AccordionContent>

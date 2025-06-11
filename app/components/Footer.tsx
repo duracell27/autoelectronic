@@ -34,7 +34,7 @@ export const Footer = (props: Props) => {
                 </Link>
               </li>
 
-              <li className="">
+              {/* <li className="">
                 <Link
                   href="#"
                   className="bg-background flex justify-center items-center rounded-full w-9 h-9"
@@ -50,11 +50,11 @@ export const Footer = (props: Props) => {
                 >
                   <Image src={"/images/social/social3.svg"} alt="Phone" width={16} height={15} />
                 </Link>
-              </li>
+              </li> */}
 
               <li className="">
                 <Link
-                  href="#"
+                  href="https://www.instagram.com/auto_electronic_ua"
                   className="bg-background flex justify-center items-center rounded-full w-9 h-9"
                 >
                   <Image src={"/images/social/social4.svg"} alt="Phone" width={16} height={18} />
@@ -67,13 +67,13 @@ export const Footer = (props: Props) => {
               <h2 className="text-lg font-semibold mb-10">Навігація</h2>
               <ul className="text-secondary-gray space-y-8">
                 <li>
-                  <Link href="#">Послуги</Link>
+                  <Link href="/services">Послуги</Link>
                 </li>
                 <li>
-                  <Link href="#">Портфоліо</Link>
+                  <Link href="/portfolio">Портфоліо</Link>
                 </li>
                 <li>
-                  <Link href="#">Партнерам</Link>
+                  <Link href="/partners">Партнерам</Link>
                 </li>
               </ul>
             </div>
@@ -95,7 +95,12 @@ export const Footer = (props: Props) => {
                 </li>
                 <li className="flex items-center gap-2">
                   <Image src={"/images/contact/contact3.svg"} alt="Phone" width={24} height={24} />
+                  <div className="flex flex-col">
+
                   <p>Івано-Франківськ</p>
+                  <p>Львів</p>
+                  <p>Київ</p>
+                  </div>
                 </li>
               </ul>
             </div>

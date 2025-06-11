@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -12,14 +13,16 @@ export const ServiceTitle = (props: Props) => {
         адаптація, прошивка
         <br /> — усе тут
       </h1>
-      <Button
-        className="text-base md:text-xl font-normal w-fit my-5 md:my-0 px-3 py-3 md:px-8 md:py-7 rounded-full hover:text-background hover:bg-foreground"
-        variant={"outlineBlack"}
-      >
-        <div className=" flex items-center gap-1">
-          більше <ChevronRight />
-        </div>
-      </Button>
+      <Link href="/services">
+        <Button
+          className="text-base md:text-xl font-normal w-fit my-5 md:my-0 px-3 py-3 md:px-8 md:py-7 rounded-full cursor-pointer hover:text-background hover:bg-foreground"
+          variant={"outlineBlack"}
+        >
+          <div className=" flex items-center gap-1">
+            більше <ChevronRight />
+          </div>
+        </Button>
+      </Link>
     </div>
   );
 };
