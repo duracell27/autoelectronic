@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { unbounded } from "./fonts/fonts";
+import { montserrat } from "./fonts/fonts";
 import clsx from "clsx";
 import "./globals.css";
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
-      <body className={clsx(unbounded.variable, "font-unbounded scroll-smooth")}>
+      <body className={clsx(montserrat.variable, "font-montserrat scroll-smooth")}>
         {children}
       </body>
     </html>

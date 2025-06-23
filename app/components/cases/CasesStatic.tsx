@@ -21,7 +21,7 @@ export const CasesStatic = (props: Props) => {
 
         <Link href={"https://www.instagram.com/auto_electronic_ua"} className="">
           <Button className="md:py-8 py-4 rounded-3xl bg-background text-foreground hover:text-background cursor-pointer absolute b-0 left-1/2 -translate-x-1/2 md:bottom-10 bottom-5">
-            <div className="flex font-semibold  md:text-2xl text-base items-center md:gap-25 gap-10">
+            <div className="flex font-bold  md:text-2xl text-base items-center md:gap-25 gap-10">
               Перейти в Instagram <Instagram className="md:size-11 size-5" />
             </div>
           </Button>

@@ -14,8 +14,8 @@ export const Footer = (props: Props) => {
             <div className="flex mb-7 items-center space-x-2">
               <Image src="/images/logo.svg" alt="Logo" width={75} height={75} />
               <div className="">
-                <p className="text-xs uppercase leading-none font-medium">Auto</p>
-                <p className="text-base leading-none uppercase font-bold">Electronic</p>
+                <p className="text-xs uppercase leading-none font-semibold">Auto</p>
+                <p className="text-base leading-none uppercase font-extrabold">Electronic</p>
               </div>
             </div>
 
@@ -27,30 +27,12 @@ export const Footer = (props: Props) => {
             <ul className="flex gap-3 items-cente">
               <li className="">
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61559841114000&locale=uk_UA"
                   className="bg-background flex justify-center items-center rounded-full w-9 h-9"
                 >
                   <Image src={"/images/social/social1.svg"} alt="Phone" width={12} height={12} />
                 </Link>
               </li>
-
-              {/* <li className="">
-                <Link
-                  href="#"
-                  className="bg-background flex justify-center items-center rounded-full w-9 h-9"
-                >
-                  <Image src={"/images/social/social2.svg"} alt="Phone" width={18} height={14} />
-                </Link>
-              </li>
-
-              <li className="">
-                <Link
-                  href="#"
-                  className="bg-background flex justify-center items-center rounded-full w-9 h-9"
-                >
-                  <Image src={"/images/social/social3.svg"} alt="Phone" width={16} height={15} />
-                </Link>
-              </li> */}
 
               <li className="">
                 <Link
@@ -62,10 +44,10 @@ export const Footer = (props: Props) => {
               </li>
             </ul>
           </div>
-          <div className="flex mt-5 md:mt-0 md:gap-29 gap-5 md:justify-end justify-between">
-            <div className="">
-              <h2 className="text-lg font-semibold mb-10">Навігація</h2>
-              <ul className="text-secondary-gray space-y-8">
+          <div className="flex mt-5 md:mt-0 md:gap-15 lg:gap-29 gap-5 md:justify-end justify-between flex-wrap md:flex-nowrap">
+            <div className="mb-5 md:mb-0">
+              <h2 className="text-lg font-bold md:mb-10 mb-5">Навігація</h2>
+              <ul className="text-secondary-gray md:space-y-8 space-y-3">
                 <li>
                   <Link href="/services">Послуги</Link>
                 </li>
@@ -78,9 +60,9 @@ export const Footer = (props: Props) => {
               </ul>
             </div>
 
-            <div className="">
-              <h2 className="text-lg font-semibold mb-10">Контакти</h2>
-              <ul className="text-secondary-gray font-avenir text-sm space-y-8">
+            <div className="mb-5 md:mb-0">
+              <h2 className="text-lg font-bold md:mb-10 mb-5">Контакти</h2>
+              <ul className="text-secondary-gray font-avenir text-sm md:space-y-8 space-y-3">
                 <li className="flex items-center gap-2">
                   <Image src={"/images/contact/contact1.svg"} alt="Phone" width={24} height={24} />
                   <a href="tel:0500878004" className="">
@@ -89,8 +71,8 @@ export const Footer = (props: Props) => {
                 </li>
                 <li className="flex items-center gap-2">
                   <Image src={"/images/contact/contact2.svg"} alt="Phone" width={24} height={24} />
-                  <a href="mailto:info@autoelectronic.com" className="">
-                    info@autoelectronic.com
+                  <a href="mailto:autoelectronicua@gmail.com" className="">
+                    autoelectronicua@gmail.com
                   </a>
                 </li>
                 <li className="flex items-center gap-2">

@@ -6,7 +6,7 @@ export const DescriptionAndroidAuto = (props: Props) => {
   return (
     <div className="md:my-8 my-2 pb-16 rounded-2xl max-w-[1400px] mx-auto bg-background">
       <div className="flex flex-col items-start justify-between w-full">
-        <h1 className="md:text-[48px] text-[25px] font-semibold px-10 md:px-20 pt-8 pb-10 md:pt-16 md:pb-20">
+        <h1 className="md:text-[48px] text-[25px] font-bold px-10 md:px-20 pt-8 pb-10 md:pt-16 md:pb-20">
           Що таке Android Auto?
         </h1>
 
@@ -16,7 +16,7 @@ export const DescriptionAndroidAuto = (props: Props) => {
             <p className="font-avenir text-base leading-7 text-secondary-gray">
               Android Auto — це зручна платформа від Google, яка дозволяє вам використовувати функції вашого смартфона безпечно та комфортно під час водіння. Завдяки Android Auto, ви можете керувати додатками, музикою, дзвінками та навігацією через екран мультимедійної системи вашого автомобіля.
             </p>
-            <h2 className="font-avenir font-semibold text-secondary-gray my-10">
+            <h2 className="font-avenir font-bold text-secondary-gray my-10">
               Що ви отримуєте з Android Auto:
             </h2>
             <ul className="font-avenir text-base leading-7 text-secondary-gray list-disc list-outside space-y-2 mb-9">

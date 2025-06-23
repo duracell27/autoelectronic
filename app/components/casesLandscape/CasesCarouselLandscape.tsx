@@ -26,7 +26,7 @@ export const CasesCarouselLandscape = (props: Props) => {
                     <span className="border md:w-14 w-7"></span> {service.date}
                   </p>
                   <div className="relative p-6 pb-3 bg-gradient-to-b from-transparent to-black/90 rounded-xl">
-                    <p className="md:text-lg text-base font-semibold text-background relative z-10">
+                    <p className="md:text-lg text-base font-bold text-background relative z-10">
                       <Link href={service.link}>
                       {service.description}
                       </Link>

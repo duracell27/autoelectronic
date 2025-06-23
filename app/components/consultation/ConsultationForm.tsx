@@ -110,7 +110,7 @@ export const ConsultationForm = (props: Props) => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Textarea placeholder="Опишіть проблему" {...field} />
+                      <Textarea placeholder="Опишіть вашу проблему та уточніть марку і рік випуску вашого авто" rows={5} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

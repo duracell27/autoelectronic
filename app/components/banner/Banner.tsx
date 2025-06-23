@@ -9,7 +9,7 @@ type Props = {
 
 export const Banner = (props: Props) => {
   return (
-    <div className="px-4 max-w-7xl mx-auto h-[350px] md:h-[775px]">
+    <div className="px-4 max-w-7xl mx-auto h-[350px] md:h-[430px] lg:h-[650px] xl:h-[755px]">
       <div className="flex items-center justify-between w-full">
         <BannerHeading scrollToConsultation={props.scrollToConsultation} />
         <BannerImg />

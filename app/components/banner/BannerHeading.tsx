@@ -18,7 +18,7 @@ export const BannerHeading = (props: Props) => {
         <p className="text-xl md:text-6xl font-extrabold ">Електроніки</p>
       </div>
       <div className=" flex flex-wrap items-center gap-2 md:gap-6">
-        <Button onClick={props.scrollToConsultation} className="text-base md:text-xl font-normal px-3 py-3  md:px-8 md:py-7 rounded-full group">
+        <Button onClick={props.scrollToConsultation} className="text-base md:text-xl font-medium px-3 py-3  md:px-8 md:py-7 rounded-full group">
           Запис в сервіс{" "}
           <Image
             className="ml-6 group-hover:ml-12 transition-all duration-300"
@@ -30,7 +30,7 @@ export const BannerHeading = (props: Props) => {
         </Button>
         <a href="tel:+380500878004">
           <Button
-            className="text-base md:text-xl font-normal  px-3 py-3 md:px-8 md:py-7 rounded-full"
+            className="text-base md:text-xl font-medium  px-3 py-3 md:px-8 md:py-7 rounded-full"
             variant={"outline"}
           >
             {" "}

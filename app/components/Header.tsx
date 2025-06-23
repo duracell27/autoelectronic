@@ -20,13 +20,13 @@ export default function Header() {
         <Link href={'/'} className="flex items-center space-x-2">
           <Image src="/images/logo.svg" alt="Logo" width={75} height={75} />
           <div className="">
-            <p className="text-xs uppercase leading-none font-medium">Auto</p>
-            <p className="text-base leading-none uppercase font-bold">Electronic</p>
+            <p className="text-xs uppercase leading-none font-semibold">Auto</p>
+            <p className="text-base leading-none uppercase font-extrabold">Electronic</p>
           </div>
         </Link>
 
         {/* Center: Menu */}
-        <div className="hidden md:flex space-x-8 text-foreground ml-18 flex-1">
+        <div className="hidden lg:flex space-x-8 text-foreground ml-18 flex-1">
           <DropdownMenu>
             <DropdownMenuTrigger className=" hover:underline flex items-center-safe gap-2 ">
               Послуги <ChevronDown />
@@ -59,7 +59,7 @@ export default function Header() {
         </div>
 
         {/* Right: Phone */}
-        <div className="hidden md:flex items-center gap-2 space-x-1 bg-foreground py-2.5 px-5 rounded-full">
+        <div className="hidden lg:flex items-center gap-2 space-x-1 bg-foreground py-2.5 px-5 rounded-full">
           <Image src={"/images/phone.svg"} alt="Phone" width={20} height={20} />
           <a
             href="tel:0500878004"
@@ -70,7 +70,7 @@ export default function Header() {
         </div>
 
         {/* Mobile: Burger menu */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <Sheet>
             <SheetTrigger>
               <Menu className="w-6 h-6" />
@@ -120,7 +120,7 @@ export default function Header() {
                   <Image src={"/images/phone.svg"} alt="Phone" width={20} height={20} />
                   <a
                     href="tel:0500878004"
-                    className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-500"
+                    className="text-sm font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-500"
                   >
                     0500878004
                   </a>

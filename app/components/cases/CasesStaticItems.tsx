@@ -21,7 +21,7 @@ export const CasesStaticItems = (props: Props) => {
                   <span className="border md:w-14 w-7"></span> {service.date}
                 </p>
                 <div className="relative p-8 pb-6 bg-gradient-to-b from-transparent to-black/90 rounded-xl">
-                  <p className="md:text-lg text-base font-semibold text-background relative z-10">
+                  <p className="md:text-lg text-base font-bold text-background relative z-10">
                     <Link href={service.link}>{service.description}</Link>
                   </p>
                 </div>
@@ -40,7 +40,7 @@ export const CasesStaticItems = (props: Props) => {
                     <span className="border md:w-14 w-7"></span> ТРАВЕНЬ 2023
                   </p>
                   <div className="relative p-8 pb-6 bg-gradient-to-b from-transparent to-black/90 rounded-xl">
-                    <p className="md:text-2xl text-base font-semibold text-background relative z-10">
+                    <p className="md:text-2xl text-base font-bold text-background relative z-10">
                       I don’t know
                     </p>
                   </div>

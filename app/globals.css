@@ -21,7 +21,7 @@
 
 :root {
   --font-avenir: "Avenir", sans-serif;
-  --font-unbounded: "Unbounded", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -58,12 +58,16 @@
 }
 
 body {
-  font-family: var(--font-unbounded);
+  font-family: var(--font-montserrat);
+  @apply font-medium
 }
 
 .font-avenir {
   font-family: var(--font-avenir) !important;
-  
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat) !important;
 }
 
 @theme inline {
@@ -105,7 +109,6 @@ body {
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-
 @layer base {
   * {
     @apply border-border
@@ -114,9 +117,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
 html {
   scroll-behavior: smooth;
-  
 }
 
 .home-container {
@@ -128,7 +131,6 @@ html {
   inset: 0;
   z-index: -10;
   background-image: url('/images/noise.png');
-  
   opacity: 0.06;
 }
 

@@ -101,7 +101,22 @@ export const db: db = {
       link: "https://www.instagram.com/p/CqbIzY0Nlqp/",
     },
   ],
-  android: [],
+  android: [
+    {
+      id: 21,
+      date: "Грудень 2024",
+      description: "Активація Android Auto",
+      imgUrl: "/images/service/android/1.jpg",
+      link: "https://www.instagram.com/auto_electronic_ua/",
+    },
+    {
+      id: 22,
+      date: "Березень 2023",
+      description: "Активація Android Auto",
+      imgUrl: "/images/service/android/2.jpg",
+      link: "https://www.instagram.com/auto_electronic_ua/",
+    },
+  ],
   home: [
     {
       id: 12,

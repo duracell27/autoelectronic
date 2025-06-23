@@ -6,7 +6,7 @@ export const DescriptionSrs = (props: Props) => {
   return (
     <div className="md:my-8 my-2 pb-16 rounded-2xl max-w-[1400px] mx-auto bg-background">
       <div className="flex flex-col items-start justify-between w-full">
-        <h1 className="md:text-[48px] text-[25px] font-semibold px-10 md:px-20 pt-8 pb-10 md:pt-16 md:pb-20">
+        <h1 className="md:text-[48px] text-[25px] font-bold px-10 md:px-20 pt-8 pb-10 md:pt-16 md:pb-20">
           Обнулення блоку SRS після ДТП
         </h1>
 
@@ -18,7 +18,7 @@ export const DescriptionSrs = (props: Props) => {
               додаткового захисту, зокрема подушки безпеки) фіксує спрацювання та зберігає помилки у
               спеціальному блоці управління.
             </p>
-            <h2 className="font-avenir font-semibold text-secondary-gray my-10">
+            <h2 className="font-avenir font-bold text-secondary-gray my-10">
               Це призводить до того, що:
             </h2>
             <ul className="font-avenir text-base leading-7 text-secondary-gray list-disc list-outside space-y-2 mb-9">
@@ -33,7 +33,7 @@ export const DescriptionSrs = (props: Props) => {
 
           {/* left Block */}
           <div className="">
-            <h2 className="font-avenir font-semibold text-secondary-gray mb-2">Це дозволяє:</h2>
+            <h2 className="font-avenir font-bold text-secondary-gray mb-2">Це дозволяє:</h2>
             <ul className="font-avenir text-base leading-7 text-secondary-gray list-disc list-outside space-y-2 mb-9">
               <li>Повністю відновити функціональність подушок безпеки</li>
               <li>
@@ -42,13 +42,13 @@ export const DescriptionSrs = (props: Props) => {
               </li>
               <li>Зняти помилки та погасити індикатор airbag</li>
             </ul>
-            <h2 className="font-avenir font-semibold text-secondary-gray mb-2">Це дозволяє:</h2>
+            <h2 className="font-avenir font-bold text-secondary-gray mb-2">Це дозволяє:</h2>
             <ul className="font-avenir text-base leading-7 text-secondary-gray list-disc list-outside space-y-2 mb-9">
               <li>Діагностика системи SRS і зчитування помилок</li>
               <li>Видалення "crash data" — інформації про спрацювання</li>
               <li>Перевірка коректної роботи після обнулення</li>
             </ul>
-            <h2 className="font-avenir font-semibold text-secondary-gray mb-2">
+            <h2 className="font-avenir font-bold text-secondary-gray mb-2">
               Гарантія на виконану роботу
             </h2>
           </div>

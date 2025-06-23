@@ -17,10 +17,10 @@ export const ServiceCard = (props: Props) => {
     <div className="bg-background rounded-2xl p-8 flex flex-col">
       <div className="flex justify-between items-center mb-6">
         <div className="rounded-full w-4 h-4" style={{ backgroundColor: props.accentColor }}></div>
-        <p className="text-sm font-avenir font-medium text-secondary-gray">{props.time}</p>
+        <p className="text-sm font-avenir font-semibold text-secondary-gray">{props.time}</p>
       </div>
       <div className="flex flex-1 flex-wrap mb-14">
-        <h1 className="text-2xl font-semibold mr-1">{props.titleBold}</h1>
+        <h1 className="text-2xl font-bold mr-1">{props.titleBold}</h1>
         <h2 className="text-2xl font-base ">{props.title}</h2>
       </div>
       <div className="flex justify-between gap-2 items-center">
