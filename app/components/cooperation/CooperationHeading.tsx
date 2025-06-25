@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -12,7 +13,7 @@ export const CooperationHeading = (props: Props) => {
       </h1>
       <Button variant={'defaultWhite'} size={'lg'}>
         <div className="flex items-center gap-1 md:gap-2">
-            <span className="">Партнерам</span>
+            <Link href={'/partners'}  className="">Партнерам</Link>
             <ArrowRight />
         </div>
       </Button>
