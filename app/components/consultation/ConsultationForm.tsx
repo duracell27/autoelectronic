@@ -55,7 +55,7 @@ export const ConsultationForm = (props: Props) => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="І`мя" type="text" {...field} />
+                      <Input placeholder="Ім`я" type="text" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -68,7 +68,7 @@ export const ConsultationForm = (props: Props) => {
                 render={({ field }) => (
                   <FormItem className="hidden">
                     <FormControl>
-                      <Input placeholder="І`мя" type="text" {...field} />
+                      <Input placeholder="" type="text" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
